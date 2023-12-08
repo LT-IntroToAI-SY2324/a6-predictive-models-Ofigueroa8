@@ -20,10 +20,20 @@ coef = np.around(model.coef_, 2)
 intercept = round(float(model.intercept_), 2)
 r_squared = round(model.score(x, y),2)
 
+print(f"Model's Linear Equation: y={coef[0]}x1 + {coef[1]}x2 + {intercept}")
+print("R Squared value:", r_squared)
+
 # Predicted values
+
 predict = model.predict(xtest)
 predict = np.around(predict, 2)
 print(predict)
+
+test = [[89, 10], [150, 20]]
+t = model.predict(test)
+t = np.around(t, 2)
+print(t)
+
 
 #Loop through the data and print out the predicted prices and the 
 #actual prices
