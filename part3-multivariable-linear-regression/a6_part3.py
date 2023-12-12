@@ -14,8 +14,8 @@ xtrain, xtest, ytrain, ytest = train_test_split(x, y, test_size = .2)
 #create linear regression model
 model = LinearRegression().fit(xtrain, ytrain)
 
-#Find and print the coefficients, intercept, and r squared values. 
-#Each should be rounded to two decimal places. 
+#Find and  the coefficients, intercept, and r squared values. 
+#Each should be print rounded to two decimal places. 
 coef = np.around(model.coef_, 2)
 intercept = round(float(model.intercept_), 2)
 r_squared = round(model.score(x, y),2)
