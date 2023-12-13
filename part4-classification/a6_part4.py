@@ -51,3 +51,5 @@ test = [[34, 56000, 1]]
 t = scaler.fit_transform(test)
 t = model.predict(t)
 print(t)
+
+print(int(0.99))
